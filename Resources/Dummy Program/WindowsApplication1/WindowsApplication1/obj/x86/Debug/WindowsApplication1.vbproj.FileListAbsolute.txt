@@ -1,0 +1,36 @@
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\WindowsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Form1.resources
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\WindowsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\WindowsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.exe
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.pdb
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\bin\Debug\WindowsApplication1.xml
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Resources.resources
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Add.resources
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Search.resources
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Results.resources
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.ResolveComReference.cache
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.Playmovie.resources
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\bin\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\User\Desktop\WindowsApplication1\WindowsApplication1\bin\Debug\AxInterop.WMPLib.dll
+D:\HDD Files\School Work\Software\Major\Dummy Program\WindowsApplication1\WindowsApplication1\obj\x86\Debug\Interop.WMPLib.dll
+D:\HDD Files\School Work\Software\Major\Dummy Program\WindowsApplication1\WindowsApplication1\obj\x86\Debug\AxInterop.WMPLib.dll
+D:\HDD Files\School Work\Software\Major\Dummy Program\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.vbproj.ResolveComReference.cache
+D:\HDD Files\School Work\Software\Major\Dummy Program\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.exe
+D:\HDD Files\School Work\Software\Major\Dummy Program\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.xml
+D:\HDD Files\School Work\Software\Major\Dummy Program\WindowsApplication1\WindowsApplication1\obj\x86\Debug\WindowsApplication1.pdb
