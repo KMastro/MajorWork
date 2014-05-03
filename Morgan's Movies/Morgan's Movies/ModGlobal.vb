@@ -1,6 +1,7 @@
 ﻿Module ModGlobal
     Public Keyword As String
     Public SelectedMovie As String
+    Public SearchCatagory As String
     Public Add_Year As String
     Public Add_Genre As String
     Public Add_Director As String

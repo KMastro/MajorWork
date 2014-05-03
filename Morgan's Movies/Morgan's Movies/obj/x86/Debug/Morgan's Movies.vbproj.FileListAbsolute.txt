@@ -66,11 +66,9 @@ E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans 
 E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.xml
 E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Interop.WMPLib.dll
 E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\AxInterop.WMPLib.dll
-E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\ResolveAssemblyReference.cache
 E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Add.resources
 E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_PlayMovie.resources
 E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Results.resources
 E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Search.resources
 E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Resources.resources
-E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\GenerateResource.read.1.tlog
-E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgan's Movies.vbproj.GenerateResource.Cache

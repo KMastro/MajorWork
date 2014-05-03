@@ -30,11 +30,11 @@ Partial Class Form_Add
         Me.TxtBox_Actor2 = New System.Windows.Forms.TextBox()
         Me.TxtBox_Actor3 = New System.Windows.Forms.TextBox()
         Me.TxtBox_Title = New System.Windows.Forms.TextBox()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Lbl_Year = New System.Windows.Forms.Label()
+        Me.Lbl_Genre = New System.Windows.Forms.Label()
+        Me.Lbl_Director = New System.Windows.Forms.Label()
+        Me.Lbl_LeadingRoles = New System.Windows.Forms.Label()
+        Me.Lbl_Title = New System.Windows.Forms.Label()
         Me.RichTxt_Summary = New System.Windows.Forms.RichTextBox()
         Me.Pic_MoviePoster = New System.Windows.Forms.PictureBox()
         Me.Btn_Finish = New System.Windows.Forms.Button()
@@ -105,60 +105,60 @@ Partial Class Form_Add
         Me.TxtBox_Title.Size = New System.Drawing.Size(220, 29)
         Me.TxtBox_Title.TabIndex = 36
         '
-        'Label5
+        'Lbl_Year
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.ForeColor = System.Drawing.Color.White
-        Me.Label5.Location = New System.Drawing.Point(266, 86)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(175, 25)
-        Me.Label5.TabIndex = 35
-        Me.Label5.Text = "Year Released:"
+        Me.Lbl_Year.AutoSize = True
+        Me.Lbl_Year.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Year.ForeColor = System.Drawing.Color.White
+        Me.Lbl_Year.Location = New System.Drawing.Point(266, 86)
+        Me.Lbl_Year.Name = "Lbl_Year"
+        Me.Lbl_Year.Size = New System.Drawing.Size(175, 25)
+        Me.Lbl_Year.TabIndex = 35
+        Me.Lbl_Year.Text = "Year Released:"
         '
-        'Label4
+        'Lbl_Genre
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.Color.White
-        Me.Label4.Location = New System.Drawing.Point(266, 140)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(83, 25)
-        Me.Label4.TabIndex = 34
-        Me.Label4.Text = "Genre:"
+        Me.Lbl_Genre.AutoSize = True
+        Me.Lbl_Genre.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Genre.ForeColor = System.Drawing.Color.White
+        Me.Lbl_Genre.Location = New System.Drawing.Point(266, 140)
+        Me.Lbl_Genre.Name = "Lbl_Genre"
+        Me.Lbl_Genre.Size = New System.Drawing.Size(83, 25)
+        Me.Lbl_Genre.TabIndex = 34
+        Me.Lbl_Genre.Text = "Genre:"
         '
-        'Label3
+        'Lbl_Director
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.ForeColor = System.Drawing.Color.White
-        Me.Label3.Location = New System.Drawing.Point(266, 190)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(102, 25)
-        Me.Label3.TabIndex = 33
-        Me.Label3.Text = "Director:"
+        Me.Lbl_Director.AutoSize = True
+        Me.Lbl_Director.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Director.ForeColor = System.Drawing.Color.White
+        Me.Lbl_Director.Location = New System.Drawing.Point(266, 190)
+        Me.Lbl_Director.Name = "Lbl_Director"
+        Me.Lbl_Director.Size = New System.Drawing.Size(102, 25)
+        Me.Lbl_Director.TabIndex = 33
+        Me.Lbl_Director.Text = "Director:"
         '
-        'Label2
+        'Lbl_LeadingRoles
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.ForeColor = System.Drawing.Color.White
-        Me.Label2.Location = New System.Drawing.Point(266, 300)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(170, 25)
-        Me.Label2.TabIndex = 32
-        Me.Label2.Text = "Leading Roles:"
+        Me.Lbl_LeadingRoles.AutoSize = True
+        Me.Lbl_LeadingRoles.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_LeadingRoles.ForeColor = System.Drawing.Color.White
+        Me.Lbl_LeadingRoles.Location = New System.Drawing.Point(266, 300)
+        Me.Lbl_LeadingRoles.Name = "Lbl_LeadingRoles"
+        Me.Lbl_LeadingRoles.Size = New System.Drawing.Size(170, 25)
+        Me.Lbl_LeadingRoles.TabIndex = 32
+        Me.Lbl_LeadingRoles.Text = "Leading Roles:"
         '
-        'Label1
+        'Lbl_Title
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.ForeColor = System.Drawing.Color.White
-        Me.Label1.Location = New System.Drawing.Point(266, 36)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(65, 25)
-        Me.Label1.TabIndex = 31
-        Me.Label1.Text = "Title:"
+        Me.Lbl_Title.AutoSize = True
+        Me.Lbl_Title.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Lbl_Title.ForeColor = System.Drawing.Color.White
+        Me.Lbl_Title.Location = New System.Drawing.Point(266, 36)
+        Me.Lbl_Title.Name = "Lbl_Title"
+        Me.Lbl_Title.Size = New System.Drawing.Size(65, 25)
+        Me.Lbl_Title.TabIndex = 31
+        Me.Lbl_Title.Text = "Title:"
         '
         'RichTxt_Summary
         '
@@ -218,11 +218,11 @@ Partial Class Form_Add
         Me.Controls.Add(Me.TxtBox_Actor2)
         Me.Controls.Add(Me.TxtBox_Actor3)
         Me.Controls.Add(Me.TxtBox_Title)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.Lbl_Year)
+        Me.Controls.Add(Me.Lbl_Genre)
+        Me.Controls.Add(Me.Lbl_Director)
+        Me.Controls.Add(Me.Lbl_LeadingRoles)
+        Me.Controls.Add(Me.Lbl_Title)
         Me.Controls.Add(Me.RichTxt_Summary)
         Me.Controls.Add(Me.Pic_MoviePoster)
         Me.Controls.Add(Me.Btn_Finish)
@@ -244,11 +244,11 @@ Partial Class Form_Add
     Friend WithEvents TxtBox_Actor2 As System.Windows.Forms.TextBox
     Friend WithEvents TxtBox_Actor3 As System.Windows.Forms.TextBox
     Friend WithEvents TxtBox_Title As System.Windows.Forms.TextBox
-    Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Lbl_Year As System.Windows.Forms.Label
+    Friend WithEvents Lbl_Genre As System.Windows.Forms.Label
+    Friend WithEvents Lbl_Director As System.Windows.Forms.Label
+    Friend WithEvents Lbl_LeadingRoles As System.Windows.Forms.Label
+    Friend WithEvents Lbl_Title As System.Windows.Forms.Label
     Friend WithEvents RichTxt_Summary As System.Windows.Forms.RichTextBox
     Friend WithEvents Pic_MoviePoster As System.Windows.Forms.PictureBox
     Friend WithEvents Btn_Finish As System.Windows.Forms.Button
