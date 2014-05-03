@@ -1,0 +1,76 @@
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\bin\Debug\Morgan's Movies.exe
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\bin\Debug\Morgan's Movies.pdb
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\bin\Debug\Morgan's Movies.xml
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\bin\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\bin\Debug\AxInterop.WMPLib.dll
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\Interop.WMPLib.dll
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\AxInterop.WMPLib.dll
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\Morgan's Movies.vbproj.ResolveComReference.cache
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\Morgan_s_Movies.Form_Add.resources
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\Morgan_s_Movies.Form_PlayMovie.resources
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\Morgan_s_Movies.Form_Results.resources
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\Morgan_s_Movies.Form_Search.resources
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\Morgan_s_Movies.Resources.resources
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\Morgan's Movies.exe
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\Morgan's Movies.xml
+C:\Documents and Settings\User\Local Settings\Application Data\Temporary Projects\Morgan's Movies\obj\x86\Debug\Morgan's Movies.pdb
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Interop.WMPLib.dll
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\AxInterop.WMPLib.dll
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgan's Movies.vbproj.ResolveComReference.cache
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Interop.WMPLib.dll
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\AxInterop.WMPLib.dll
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\GenerateResource.read.1.tlog
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\GenerateResource.write.1.tlog
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Add.resources
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_PlayMovie.resources
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Results.resources
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Search.resources
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Resources.resources
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.exe
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.pdb
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.xml
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans Movies.exe
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans Movies.xml
+D:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans Movies.pdb
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Interop.WMPLib.dll
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\AxInterop.WMPLib.dll
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgan's Movies.vbproj.ResolveComReference.cache
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans Movies.exe
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans Movies.xml
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans Movies.pdb
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.exe
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.pdb
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.xml
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Interop.WMPLib.dll
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\AxInterop.WMPLib.dll
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Add.resources
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_PlayMovie.resources
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Results.resources
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Search.resources
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Resources.resources
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.exe.config
+E:\HDD Files\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgan's Movies.vbproj.GenerateResource.Cache
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.exe.config
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Interop.WMPLib.dll
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\AxInterop.WMPLib.dll
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgan's Movies.vbproj.ResolveComReference.cache
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans Movies.exe
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans Movies.xml
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans Movies.pdb
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.exe
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.pdb
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.xml
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Interop.WMPLib.dll
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\AxInterop.WMPLib.dll
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Add.resources
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_PlayMovie.resources
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Results.resources
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Search.resources
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Resources.resources
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\obj\x86\Debug\GenerateResource.write.1.tlog
