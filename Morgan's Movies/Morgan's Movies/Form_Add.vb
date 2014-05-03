@@ -21,7 +21,7 @@
         Add_Genre = TxtBox_Genre.Text
         Add_Director = TxtBox_Director.Text
         'NEED TO ADD ACTORS!
-
+        '------------------'
 
 
 
@@ -125,6 +125,7 @@
             FileOpen(3, Director_Location, OpenMode.Append)
             PrintLine(3, TxtBox_Title.Text.ToLower)
             FileClose(3)
+
 
             '    Dim YearWriter As New System.IO.StreamWriter(Year_Location)
             '    If System.IO.File.Exists(Year_Location) = True Then

@@ -1,6 +1,5 @@
 ﻿Public Class Form_Results
     Dim Selected_Movie As String
-    Dim Location As String = "E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Titles\" & Keyword & ".txt"
     Dim Results As New List(Of String)
 
     Private Sub Btn_Edit_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Edit.Click
@@ -23,7 +22,6 @@
 
             'Displays the name of each file in results box
             Dim file As String
-            Dim count As Integer = 0
             For Each file In Txtfiles
                 FileOpen(1, file, OpenMode.Input)
                 ListBox_Results.Items.Add(LineInput(1))
@@ -32,18 +30,45 @@
 
         End If
 
-        If IO.File.Exists("E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Titles\" & Keyword & ".txt") Then
+        'Checks search catagory so it knows where to search for the right results
+        'TITLE SEARCH
 
-            FileOpen(1, Location, OpenMode.Input)
-            Results.Add(LineInput(1))
-            FileClose(1)
+        If SearchCatagory = "Title" Then
+            If IO.File.Exists("E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Titles\" & Keyword & ".txt") Then
+                Dim location As String = "E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Titles\" & Keyword & ".txt"
+                FileOpen(1, location, OpenMode.Input)
+                Results.Add(LineInput(1))
+                FileClose(1)
+                'Adds the result to the listbox
+                ListBox_Results.Items.Add(Results(0))
+            End If
+        End If
+
+        'This is what happens when you select to search by genre
+        'GENRE SEARCH
+        If SearchCatagory = "Genre" Then
+            If IO.File.Exists("E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Genre\" & Keyword & ".txt") Then
+                Dim location As String = "E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Genre\" & Keyword & ".txt"
+
+                'Gets the number of lines in the txt file
+                Dim Lines = IO.File.ReadAllLines(location).Length
+                Dim i As Integer = 0
 
 
+                Dim reader As System.IO.StreamReader = New System.IO.StreamReader(location)
 
-            'Adds the result to the listbox
-            ListBox_Results.Items.Add(Results(0))
+                'Adds each line to from txt file and places them into listbox
+                Do
 
+                    Results.Add(reader.ReadLine)
 
+                    'Adds the result to the listbox
+                    ListBox_Results.Items.Add(Results(i).ToString)
+                    i += 1
+
+                Loop Until i = Lines
+
+            End If
 
         End If
 
