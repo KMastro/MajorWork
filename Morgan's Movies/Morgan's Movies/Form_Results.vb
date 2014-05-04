@@ -67,10 +67,94 @@
                     i += 1
 
                 Loop Until i = Lines
-
             End If
-
         End If
+
+
+
+
+        'This is what happens when you select to search by Director
+        'DIRECTOR SEARCH
+        If SearchCatagory = "Director" Then
+            If IO.File.Exists("E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Director\" & Keyword & ".txt") Then
+                Dim location As String = "E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Director\" & Keyword & ".txt"
+
+                'Gets the number of lines in the txt file
+                Dim Lines = IO.File.ReadAllLines(location).Length
+                Dim i As Integer = 0
+
+
+                Dim reader As System.IO.StreamReader = New System.IO.StreamReader(location)
+
+                'Adds each line to from txt file and places them into listbox
+                Do
+
+                    Results.Add(reader.ReadLine)
+
+                    'Adds the result to the listbox
+                    ListBox_Results.Items.Add(Results(i).ToString)
+                    i += 1
+
+                Loop Until i = Lines
+            End If
+        End If
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        If SearchCatagory = "Actor" Then
+            If IO.File.Exists("E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Actors\" & Keyword & ".txt") Then
+                Dim location As String = "E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Actors\" & Keyword & ".txt"
+
+                'Gets the number of lines in the txt file
+                Dim Lines = IO.File.ReadAllLines(location).Length
+                Dim i As Integer = 0
+
+
+                Dim reader As System.IO.StreamReader = New System.IO.StreamReader(location)
+
+                'Adds each line to from txt file and places them into listbox
+                Do
+
+                    Results.Add(reader.ReadLine)
+
+                    'Adds the result to the listbox
+                    ListBox_Results.Items.Add(Results(i).ToString)
+                    i += 1
+
+                Loop Until i = Lines
+            End If
+        End If
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

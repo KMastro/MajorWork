@@ -20,8 +20,10 @@
         Add_Year = TxtBox_Year.Text
         Add_Genre = TxtBox_Genre.Text
         Add_Director = TxtBox_Director.Text
-        'NEED TO ADD ACTORS!
-        '------------------'
+        Add_Actor1 = TxtBox_Actor1.Text
+        Add_Actor2 = TxtBox_Actor2.Text
+        Add_Actor3 = TxtBox_Actor3.Text
+
 
 
 
@@ -113,7 +115,13 @@
 
             Dim Director_Location As String = ("E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Director\" & Add_Director.ToLower & ".txt")
 
+            Dim Actor1_Location As String = ("E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Actors\" & Add_Actor1.ToLower & ".txt")
 
+            Dim Actor2_Location As String = ("E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Actors\" & Add_Actor2.ToLower & ".txt")
+
+            Dim Actor3_Location As String = ("E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Actors\" & Add_Actor3.ToLower & ".txt")
+
+            'Writes the title of the newly added movie to each txt file 
             FileOpen(1, Year_Location, OpenMode.Append)
             PrintLine(1, TxtBox_Title.Text.ToLower)
             FileClose(1)
@@ -126,7 +134,20 @@
             PrintLine(3, TxtBox_Title.Text.ToLower)
             FileClose(3)
 
+            FileOpen(4, Actor1_Location, OpenMode.Append)
+            PrintLine(4, TxtBox_Title.Text.ToLower)
+            FileClose(4)
 
+            FileOpen(5, Actor2_Location, OpenMode.Append)
+            PrintLine(5, TxtBox_Title.Text.ToLower)
+            FileClose(5)
+
+            FileOpen(6, Actor3_Location, OpenMode.Append)
+            PrintLine(6, TxtBox_Title.Text.ToLower)
+            FileClose(6)
+
+
+            'This was how i was going to do it 
             '    Dim YearWriter As New System.IO.StreamWriter(Year_Location)
             '    If System.IO.File.Exists(Year_Location) = True Then
             '        YearWriter.WriteLine(TxtBox_Title.Text.ToLower)
