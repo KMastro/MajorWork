@@ -22,17 +22,76 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
+        Me.MorgansMoviesDataSet = New WindowsApplication1.MorgansMoviesDataSet()
+        Me.TblMoviesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblMoviesTableAdapter = New WindowsApplication1.MorgansMoviesDataSetTableAdapters.tblMoviesTableAdapter()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button1 = New System.Windows.Forms.Button()
+        CType(Me.MorgansMoviesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TblMoviesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'MorgansMoviesDataSet
+        '
+        Me.MorgansMoviesDataSet.DataSetName = "MorgansMoviesDataSet"
+        Me.MorgansMoviesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TblMoviesBindingSource
+        '
+        Me.TblMoviesBindingSource.DataMember = "tblMovies"
+        Me.TblMoviesBindingSource.DataSource = Me.MorgansMoviesDataSet
+        '
+        'TblMoviesTableAdapter
+        '
+        Me.TblMoviesTableAdapter.ClearBeforeFill = True
+        '
+        'ListBox1
+        '
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.Location = New System.Drawing.Point(12, 29)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(367, 238)
+        Me.ListBox1.TabIndex = 0
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(485, 67)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(237, 20)
+        Me.TextBox1.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(531, 152)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(190, 51)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(831, 568)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.ListBox1)
         Me.Name = "Form1"
         Me.Text = "Form1"
+        CType(Me.MorgansMoviesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TblMoviesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
+    Friend WithEvents MorgansMoviesDataSet As WindowsApplication1.MorgansMoviesDataSet
+    Friend WithEvents TblMoviesBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TblMoviesTableAdapter As WindowsApplication1.MorgansMoviesDataSetTableAdapters.tblMoviesTableAdapter
+    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Button1 As System.Windows.Forms.Button
 
 End Class
