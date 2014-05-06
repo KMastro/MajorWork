@@ -11,6 +11,11 @@
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'MorgansMoviesDataSet1.tblMovies' table. You can move, or remove it, as needed.
+        Me.TblMoviesTableAdapter1.Fill(Me.MorgansMoviesDataSet1.tblMovies)
+
+        'TODO: This line of code loads data into the 'MorgansMoviesDataSet.tblMovies' table. You can move, or remove it, as needed.
+        Me.TblMoviesTableAdapter.Fill(Me.MorgansMoviesDataSet.tblMovies)
         'TODO: This line of code loads data into the 'MorgansMoviesDataSet.tblMovies' table. You can move, or remove it, as needed.
         Me.TblMoviesTableAdapter.Fill(Me.MorgansMoviesDataSet.tblMovies)
         Refreshrows()
@@ -25,5 +30,6 @@
 
         TblMoviesTableAdapter.Insert(TextBox1.Text, "2001", "Derp")
         Refreshrows()
+
     End Sub
 End Class

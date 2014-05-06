@@ -84,6 +84,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>MorgansMoviesDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MorgansMoviesDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MorgansMoviesDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -123,6 +128,17 @@
     </None>
     <None Include="MorgansMoviesDataSet.xss">
       <DependentUpon>MorgansMoviesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MorgansMoviesDataSet1.xsc">
+      <DependentUpon>MorgansMoviesDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="MorgansMoviesDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MorgansMoviesDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MorgansMoviesDataSet1.xss">
+      <DependentUpon>MorgansMoviesDataSet1.xsd</DependentUpon>
     </None>
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>

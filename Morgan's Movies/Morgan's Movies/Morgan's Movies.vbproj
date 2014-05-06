@@ -118,6 +118,11 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ModGlobal.vb" />
+    <Compile Include="MorgansMoviesDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MorgansMoviesDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -157,6 +162,17 @@
   <ItemGroup>
     <None Include="app.config">
       <SubType>Designer</SubType>
+    </None>
+    <None Include="MorgansMoviesDataSet.xsc">
+      <DependentUpon>MorgansMoviesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MorgansMoviesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MorgansMoviesDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MorgansMoviesDataSet.xss">
+      <DependentUpon>MorgansMoviesDataSet.xsd</DependentUpon>
     </None>
     <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">

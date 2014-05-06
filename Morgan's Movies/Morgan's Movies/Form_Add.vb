@@ -190,15 +190,15 @@
                 Pic_MoviePoster.Image.Save(Image_Location, System.Drawing.Imaging.ImageFormat.Jpeg)
 
 
-                'Writes all information to a txt file
-                FileWriter.WriteLine(TxtBox_Title.Text.ToLower)
-                FileWriter.WriteLine(TxtBox_Year.Text.ToLower)
-                FileWriter.WriteLine(TxtBox_Genre.Text.ToLower)
-                FileWriter.WriteLine(TxtBox_Director.Text.ToLower)
-                FileWriter.WriteLine(TxtBox_Actor1.Text.ToLower & "." & TxtBox_Actor2.Text.ToLower & "." & TxtBox_Actor3.Text.ToLower)
-                FileWriter.WriteLine(RichTxt_Summary.Text.ToLower)
-                FileWriter.WriteLine(Image_Location)
-                FileWriter.Close()
+                ''Writes all information to a txt file
+                'FileWriter.WriteLine(TxtBox_Title.Text.ToLower)
+                'FileWriter.WriteLine(TxtBox_Year.Text.ToLower)
+                'FileWriter.WriteLine(TxtBox_Genre.Text.ToLower)
+                'FileWriter.WriteLine(TxtBox_Director.Text.ToLower)
+                'FileWriter.WriteLine(TxtBox_Actor1.Text.ToLower & "." & TxtBox_Actor2.Text.ToLower & "." & TxtBox_Actor3.Text.ToLower)
+                'FileWriter.WriteLine(RichTxt_Summary.Text.ToLower)
+                'FileWriter.WriteLine(Image_Location)
+                'FileWriter.Close()
 
                 'Lets user know that they have successfully added
                 MsgBox("Successfully Added")
@@ -215,6 +215,8 @@
     End Sub
 
     Private Sub Form_Add_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        'TODO: This line of code loads data into the 'MorgansMoviesDataSet.tblMovies' table. You can move, or remove it, as needed.
+        Me.TblMoviesTableAdapter.Fill(Me.MorgansMoviesDataSet.tblMovies)
 
         'loads the initial image that instructs the user to Drag & Drop an image
         Pic_MoviePoster.Load("E:\School Work\Software\Major\Morgan's Movies\Morgan's Movies\bin\Debug\Movie Files\Image Files\DragNDrop.jpg")
@@ -250,6 +252,13 @@
             e.Effect = DragDropEffects.Copy
 
         End If
+
+    End Sub
+
+    Private Sub TblMoviesBindingNavigatorSaveItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TblMoviesBindingNavigatorSaveItem.Click
+        Me.Validate()
+        Me.TblMoviesBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me.MorgansMoviesDataSet)
 
     End Sub
 End Class
