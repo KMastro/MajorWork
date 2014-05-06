@@ -85,3 +85,8 @@ E:\School Work\Software\Major\MajorWork GIT\Morgan's Movies\Morgan's Movies\obj\
 E:\School Work\Software\Major\MajorWork GIT\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Form_Search.resources
 E:\School Work\Software\Major\MajorWork GIT\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgans_Movies.Resources.resources
 E:\School Work\Software\Major\MajorWork GIT\Morgan's Movies\Morgan's Movies\obj\x86\Debug\Morgan's Movies.vbproj.GenerateResource.Cache
+E:\School Work\Software\Major\MajorWork GIT\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.exe
+E:\School Work\Software\Major\MajorWork GIT\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.pdb
+E:\School Work\Software\Major\MajorWork GIT\Morgan's Movies\Morgan's Movies\bin\Debug\Morgans Movies.xml
+E:\School Work\Software\Major\MajorWork GIT\Morgan's Movies\Morgan's Movies\bin\Debug\Interop.WMPLib.dll
+E:\School Work\Software\Major\MajorWork GIT\Morgan's Movies\Morgan's Movies\bin\Debug\AxInterop.WMPLib.dll

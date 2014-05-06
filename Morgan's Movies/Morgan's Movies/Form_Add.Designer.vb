@@ -23,26 +23,30 @@ Partial Class Form_Add
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Add))
         Dim TitleLabel As System.Windows.Forms.Label
         Dim Year_ReleasedLabel As System.Windows.Forms.Label
-        Me.TxtBox_Genre = New System.Windows.Forms.TextBox()
-        Me.TxtBox_Director = New System.Windows.Forms.TextBox()
-        Me.TxtBox_Actor1 = New System.Windows.Forms.TextBox()
-        Me.TxtBox_Actor2 = New System.Windows.Forms.TextBox()
-        Me.TxtBox_Actor3 = New System.Windows.Forms.TextBox()
-        Me.Lbl_Year = New System.Windows.Forms.Label()
-        Me.Lbl_Genre = New System.Windows.Forms.Label()
-        Me.Lbl_Director = New System.Windows.Forms.Label()
-        Me.Lbl_LeadingRoles = New System.Windows.Forms.Label()
-        Me.RichTxt_Summary = New System.Windows.Forms.RichTextBox()
+        Dim DirectorsLabel As System.Windows.Forms.Label
+        Dim GenreLabel As System.Windows.Forms.Label
+        Dim Field1Label As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form_Add))
         Me.Pic_MoviePoster = New System.Windows.Forms.PictureBox()
         Me.Btn_Finish = New System.Windows.Forms.Button()
         Me.Btn_Cancel = New System.Windows.Forms.Button()
-        Me.MorgansMoviesDataSet = New Morgans_Movies.MorgansMoviesDataSet()
+        Me.TitleTextBox = New System.Windows.Forms.TextBox()
+        Me.Year_ReleasedTextBox = New System.Windows.Forms.TextBox()
+        Me.DirectorsTextBox = New System.Windows.Forms.TextBox()
+        Me.GenreTextBox = New System.Windows.Forms.TextBox()
+        Me.Actor1TextBox = New System.Windows.Forms.TextBox()
+        Me.Actor3TextBox = New System.Windows.Forms.TextBox()
+        Me.Actor2TextBox = New System.Windows.Forms.TextBox()
+        Me.SummaryRichTextBox = New System.Windows.Forms.RichTextBox()
+        Me.Field1TextBox = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.MorgansMoviesDataSet2 = New Morgans_Movies.MorgansMoviesDataSet2()
         Me.TblMoviesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TblMoviesTableAdapter = New Morgans_Movies.MorgansMoviesDataSetTableAdapters.tblMoviesTableAdapter()
-        Me.TableAdapterManager = New Morgans_Movies.MorgansMoviesDataSetTableAdapters.TableAdapterManager()
+        Me.TblMoviesTableAdapter1 = New Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblMoviesTableAdapter()
+        Me.TableAdapterManager2 = New Morgans_Movies.MorgansMoviesDataSet2TableAdapters.TableAdapterManager()
         Me.TblMoviesBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
@@ -56,116 +60,78 @@ Partial Class Form_Add
         Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.TblMoviesBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
-        Me.TitleTextBox = New System.Windows.Forms.TextBox()
-        Me.Year_ReleasedTextBox = New System.Windows.Forms.TextBox()
+        Me.TblGenresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblGenresTableAdapter1 = New Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblGenresTableAdapter()
+        Me.TblActorsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TblActorsTableAdapter = New Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblActorsTableAdapter()
         TitleLabel = New System.Windows.Forms.Label()
         Year_ReleasedLabel = New System.Windows.Forms.Label()
+        DirectorsLabel = New System.Windows.Forms.Label()
+        GenreLabel = New System.Windows.Forms.Label()
+        Field1Label = New System.Windows.Forms.Label()
         CType(Me.Pic_MoviePoster, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.MorgansMoviesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.MorgansMoviesDataSet2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblMoviesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblMoviesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TblMoviesBindingNavigator.SuspendLayout()
+        CType(Me.TblGenresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TblActorsBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'TxtBox_Genre
+        'TitleLabel
         '
-        Me.TxtBox_Genre.BackColor = System.Drawing.Color.White
-        Me.TxtBox_Genre.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBox_Genre.Location = New System.Drawing.Point(477, 138)
-        Me.TxtBox_Genre.Name = "TxtBox_Genre"
-        Me.TxtBox_Genre.Size = New System.Drawing.Size(220, 29)
-        Me.TxtBox_Genre.TabIndex = 41
+        TitleLabel.AutoSize = True
+        TitleLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        TitleLabel.ForeColor = System.Drawing.Color.White
+        TitleLabel.Location = New System.Drawing.Point(266, 38)
+        TitleLabel.Name = "TitleLabel"
+        TitleLabel.Size = New System.Drawing.Size(65, 25)
+        TitleLabel.TabIndex = 43
+        TitleLabel.Text = "Title:"
         '
-        'TxtBox_Director
+        'Year_ReleasedLabel
         '
-        Me.TxtBox_Director.BackColor = System.Drawing.Color.White
-        Me.TxtBox_Director.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBox_Director.Location = New System.Drawing.Point(477, 188)
-        Me.TxtBox_Director.Name = "TxtBox_Director"
-        Me.TxtBox_Director.Size = New System.Drawing.Size(220, 29)
-        Me.TxtBox_Director.TabIndex = 40
+        Year_ReleasedLabel.AutoSize = True
+        Year_ReleasedLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Year_ReleasedLabel.ForeColor = System.Drawing.Color.White
+        Year_ReleasedLabel.Location = New System.Drawing.Point(266, 91)
+        Year_ReleasedLabel.Name = "Year_ReleasedLabel"
+        Year_ReleasedLabel.Size = New System.Drawing.Size(175, 25)
+        Year_ReleasedLabel.TabIndex = 44
+        Year_ReleasedLabel.Text = "Year Released:"
         '
-        'TxtBox_Actor1
+        'DirectorsLabel
         '
-        Me.TxtBox_Actor1.BackColor = System.Drawing.Color.White
-        Me.TxtBox_Actor1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBox_Actor1.Location = New System.Drawing.Point(477, 298)
-        Me.TxtBox_Actor1.Name = "TxtBox_Actor1"
-        Me.TxtBox_Actor1.Size = New System.Drawing.Size(220, 29)
-        Me.TxtBox_Actor1.TabIndex = 39
+        DirectorsLabel.AutoSize = True
+        DirectorsLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DirectorsLabel.ForeColor = System.Drawing.Color.White
+        DirectorsLabel.Location = New System.Drawing.Point(266, 193)
+        DirectorsLabel.Name = "DirectorsLabel"
+        DirectorsLabel.Size = New System.Drawing.Size(102, 25)
+        DirectorsLabel.TabIndex = 45
+        DirectorsLabel.Text = "Director:"
         '
-        'TxtBox_Actor2
+        'GenreLabel
         '
-        Me.TxtBox_Actor2.BackColor = System.Drawing.Color.White
-        Me.TxtBox_Actor2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBox_Actor2.Location = New System.Drawing.Point(271, 343)
-        Me.TxtBox_Actor2.Name = "TxtBox_Actor2"
-        Me.TxtBox_Actor2.Size = New System.Drawing.Size(198, 29)
-        Me.TxtBox_Actor2.TabIndex = 38
+        GenreLabel.AutoSize = True
+        GenreLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        GenreLabel.ForeColor = System.Drawing.Color.White
+        GenreLabel.Location = New System.Drawing.Point(266, 140)
+        GenreLabel.Name = "GenreLabel"
+        GenreLabel.Size = New System.Drawing.Size(83, 25)
+        GenreLabel.TabIndex = 46
+        GenreLabel.Text = "Genre:"
         '
-        'TxtBox_Actor3
+        'Field1Label
         '
-        Me.TxtBox_Actor3.BackColor = System.Drawing.Color.White
-        Me.TxtBox_Actor3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TxtBox_Actor3.Location = New System.Drawing.Point(477, 343)
-        Me.TxtBox_Actor3.Name = "TxtBox_Actor3"
-        Me.TxtBox_Actor3.Size = New System.Drawing.Size(220, 29)
-        Me.TxtBox_Actor3.TabIndex = 37
-        '
-        'Lbl_Year
-        '
-        Me.Lbl_Year.AutoSize = True
-        Me.Lbl_Year.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblMoviesBindingSource, "Year Released", True))
-        Me.Lbl_Year.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_Year.ForeColor = System.Drawing.Color.White
-        Me.Lbl_Year.Location = New System.Drawing.Point(266, 86)
-        Me.Lbl_Year.Name = "Lbl_Year"
-        Me.Lbl_Year.Size = New System.Drawing.Size(175, 25)
-        Me.Lbl_Year.TabIndex = 35
-        Me.Lbl_Year.Text = "Year Released:"
-        '
-        'Lbl_Genre
-        '
-        Me.Lbl_Genre.AutoSize = True
-        Me.Lbl_Genre.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_Genre.ForeColor = System.Drawing.Color.White
-        Me.Lbl_Genre.Location = New System.Drawing.Point(266, 140)
-        Me.Lbl_Genre.Name = "Lbl_Genre"
-        Me.Lbl_Genre.Size = New System.Drawing.Size(83, 25)
-        Me.Lbl_Genre.TabIndex = 34
-        Me.Lbl_Genre.Text = "Genre:"
-        '
-        'Lbl_Director
-        '
-        Me.Lbl_Director.AutoSize = True
-        Me.Lbl_Director.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_Director.ForeColor = System.Drawing.Color.White
-        Me.Lbl_Director.Location = New System.Drawing.Point(266, 190)
-        Me.Lbl_Director.Name = "Lbl_Director"
-        Me.Lbl_Director.Size = New System.Drawing.Size(102, 25)
-        Me.Lbl_Director.TabIndex = 33
-        Me.Lbl_Director.Text = "Director:"
-        '
-        'Lbl_LeadingRoles
-        '
-        Me.Lbl_LeadingRoles.AutoSize = True
-        Me.Lbl_LeadingRoles.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Lbl_LeadingRoles.ForeColor = System.Drawing.Color.White
-        Me.Lbl_LeadingRoles.Location = New System.Drawing.Point(266, 300)
-        Me.Lbl_LeadingRoles.Name = "Lbl_LeadingRoles"
-        Me.Lbl_LeadingRoles.Size = New System.Drawing.Size(170, 25)
-        Me.Lbl_LeadingRoles.TabIndex = 32
-        Me.Lbl_LeadingRoles.Text = "Leading Roles:"
-        '
-        'RichTxt_Summary
-        '
-        Me.RichTxt_Summary.BackColor = System.Drawing.Color.White
-        Me.RichTxt_Summary.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RichTxt_Summary.Location = New System.Drawing.Point(42, 240)
-        Me.RichTxt_Summary.Name = "RichTxt_Summary"
-        Me.RichTxt_Summary.Size = New System.Drawing.Size(218, 130)
-        Me.RichTxt_Summary.TabIndex = 30
-        Me.RichTxt_Summary.Text = ""
+        Field1Label.AutoSize = True
+        Field1Label.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Field1Label.ForeColor = System.Drawing.Color.White
+        Field1Label.Location = New System.Drawing.Point(266, 302)
+        Field1Label.Name = "Field1Label"
+        Field1Label.Size = New System.Drawing.Size(170, 25)
+        Field1Label.TabIndex = 47
+        Field1Label.Text = "Leading Roles:"
         '
         'Pic_MoviePoster
         '
@@ -201,25 +167,116 @@ Partial Class Form_Add
         Me.Btn_Cancel.Text = "Cancel"
         Me.Btn_Cancel.UseVisualStyleBackColor = True
         '
-        'MorgansMoviesDataSet
+        'TitleTextBox
         '
-        Me.MorgansMoviesDataSet.DataSetName = "MorgansMoviesDataSet"
-        Me.MorgansMoviesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        Me.TitleTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TitleTextBox.Location = New System.Drawing.Point(477, 34)
+        Me.TitleTextBox.Name = "TitleTextBox"
+        Me.TitleTextBox.Size = New System.Drawing.Size(220, 29)
+        Me.TitleTextBox.TabIndex = 44
+        '
+        'Year_ReleasedTextBox
+        '
+        Me.Year_ReleasedTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Year_ReleasedTextBox.ForeColor = System.Drawing.Color.Black
+        Me.Year_ReleasedTextBox.Location = New System.Drawing.Point(477, 85)
+        Me.Year_ReleasedTextBox.Name = "Year_ReleasedTextBox"
+        Me.Year_ReleasedTextBox.Size = New System.Drawing.Size(220, 31)
+        Me.Year_ReleasedTextBox.TabIndex = 45
+        '
+        'DirectorsTextBox
+        '
+        Me.DirectorsTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DirectorsTextBox.Location = New System.Drawing.Point(477, 187)
+        Me.DirectorsTextBox.Name = "DirectorsTextBox"
+        Me.DirectorsTextBox.Size = New System.Drawing.Size(220, 31)
+        Me.DirectorsTextBox.TabIndex = 46
+        '
+        'GenreTextBox
+        '
+        Me.GenreTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GenreTextBox.Location = New System.Drawing.Point(477, 136)
+        Me.GenreTextBox.Name = "GenreTextBox"
+        Me.GenreTextBox.Size = New System.Drawing.Size(220, 29)
+        Me.GenreTextBox.TabIndex = 47
+        '
+        'Actor1TextBox
+        '
+        Me.Actor1TextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Actor1TextBox.Location = New System.Drawing.Point(477, 298)
+        Me.Actor1TextBox.Name = "Actor1TextBox"
+        Me.Actor1TextBox.Size = New System.Drawing.Size(220, 29)
+        Me.Actor1TextBox.TabIndex = 48
+        '
+        'Actor3TextBox
+        '
+        Me.Actor3TextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Actor3TextBox.Location = New System.Drawing.Point(477, 341)
+        Me.Actor3TextBox.Name = "Actor3TextBox"
+        Me.Actor3TextBox.Size = New System.Drawing.Size(220, 29)
+        Me.Actor3TextBox.TabIndex = 49
+        '
+        'Actor2TextBox
+        '
+        Me.Actor2TextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Actor2TextBox.Location = New System.Drawing.Point(271, 341)
+        Me.Actor2TextBox.Name = "Actor2TextBox"
+        Me.Actor2TextBox.Size = New System.Drawing.Size(189, 29)
+        Me.Actor2TextBox.TabIndex = 50
+        '
+        'SummaryRichTextBox
+        '
+        Me.SummaryRichTextBox.Location = New System.Drawing.Point(42, 240)
+        Me.SummaryRichTextBox.Name = "SummaryRichTextBox"
+        Me.SummaryRichTextBox.Size = New System.Drawing.Size(218, 130)
+        Me.SummaryRichTextBox.TabIndex = 51
+        Me.SummaryRichTextBox.Text = ""
+        '
+        'Field1TextBox
+        '
+        Me.Field1TextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Field1TextBox.Location = New System.Drawing.Point(477, 298)
+        Me.Field1TextBox.Name = "Field1TextBox"
+        Me.Field1TextBox.Size = New System.Drawing.Size(220, 29)
+        Me.Field1TextBox.TabIndex = 48
+        '
+        'TextBox2
+        '
+        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox2.Location = New System.Drawing.Point(271, 341)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(189, 29)
+        Me.TextBox2.TabIndex = 50
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBox1.Location = New System.Drawing.Point(477, 341)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(220, 29)
+        Me.TextBox1.TabIndex = 49
+        '
+        'MorgansMoviesDataSet2
+        '
+        Me.MorgansMoviesDataSet2.DataSetName = "MorgansMoviesDataSet2"
+        Me.MorgansMoviesDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
         '
         'TblMoviesBindingSource
         '
         Me.TblMoviesBindingSource.DataMember = "tblMovies"
-        Me.TblMoviesBindingSource.DataSource = Me.MorgansMoviesDataSet
+        Me.TblMoviesBindingSource.DataSource = Me.MorgansMoviesDataSet2
         '
-        'TblMoviesTableAdapter
+        'TblMoviesTableAdapter1
         '
-        Me.TblMoviesTableAdapter.ClearBeforeFill = True
+        Me.TblMoviesTableAdapter1.ClearBeforeFill = True
         '
-        'TableAdapterManager
+        'TableAdapterManager2
         '
-        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
-        Me.TableAdapterManager.tblMoviesTableAdapter = Me.TblMoviesTableAdapter
-        Me.TableAdapterManager.UpdateOrder = Morgans_Movies.MorgansMoviesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        Me.TableAdapterManager2.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager2.tblActorsTableAdapter = Me.TblActorsTableAdapter
+        Me.TableAdapterManager2.tblGenresTableAdapter = Me.TblGenresTableAdapter1
+        Me.TableAdapterManager2.tblMoviesTableAdapter = Me.TblMoviesTableAdapter1
+        Me.TableAdapterManager2.UpdateOrder = Morgans_Movies.MorgansMoviesDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
         'TblMoviesBindingNavigator
         '
@@ -235,8 +292,8 @@ Partial Class Form_Add
         Me.TblMoviesBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.TblMoviesBindingNavigator.Name = "TblMoviesBindingNavigator"
         Me.TblMoviesBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.TblMoviesBindingNavigator.Size = New System.Drawing.Size(742, 25)
-        Me.TblMoviesBindingNavigator.TabIndex = 43
+        Me.TblMoviesBindingNavigator.Size = New System.Drawing.Size(751, 25)
+        Me.TblMoviesBindingNavigator.TabIndex = 52
         Me.TblMoviesBindingNavigator.Text = "BindingNavigator1"
         '
         'BindingNavigatorMoveFirstItem
@@ -274,14 +331,14 @@ Partial Class Form_Add
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 15)
         Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -289,7 +346,7 @@ Partial Class Form_Add
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 20)
         Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
         'BindingNavigatorMoveLastItem
@@ -298,13 +355,13 @@ Partial Class Form_Add
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 20)
         Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
         '
         'BindingNavigatorAddNewItem
         '
@@ -321,7 +378,7 @@ Partial Class Form_Add
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
         Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'TblMoviesBindingNavigatorSaveItem
@@ -329,49 +386,26 @@ Partial Class Form_Add
         Me.TblMoviesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.TblMoviesBindingNavigatorSaveItem.Image = CType(resources.GetObject("TblMoviesBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.TblMoviesBindingNavigatorSaveItem.Name = "TblMoviesBindingNavigatorSaveItem"
-        Me.TblMoviesBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
+        Me.TblMoviesBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
         Me.TblMoviesBindingNavigatorSaveItem.Text = "Save Data"
         '
-        'TitleLabel
+        'TblGenresBindingSource
         '
-        TitleLabel.AutoSize = True
-        TitleLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        TitleLabel.ForeColor = System.Drawing.Color.White
-        TitleLabel.Location = New System.Drawing.Point(267, 39)
-        TitleLabel.Name = "TitleLabel"
-        TitleLabel.Size = New System.Drawing.Size(56, 24)
-        TitleLabel.TabIndex = 43
-        TitleLabel.Text = "Title:"
+        Me.TblGenresBindingSource.DataMember = "tblGenres"
+        Me.TblGenresBindingSource.DataSource = Me.MorgansMoviesDataSet2
         '
-        'TitleTextBox
+        'TblGenresTableAdapter1
         '
-        Me.TitleTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblMoviesBindingSource, "Title", True))
-        Me.TitleTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TitleTextBox.Location = New System.Drawing.Point(477, 36)
-        Me.TitleTextBox.Name = "TitleTextBox"
-        Me.TitleTextBox.Size = New System.Drawing.Size(220, 29)
-        Me.TitleTextBox.TabIndex = 44
+        Me.TblGenresTableAdapter1.ClearBeforeFill = True
         '
-        'Year_ReleasedLabel
+        'TblActorsBindingSource
         '
-        Year_ReleasedLabel.AutoSize = True
-        Year_ReleasedLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Year_ReleasedLabel.ForeColor = System.Drawing.Color.White
-        Year_ReleasedLabel.Location = New System.Drawing.Point(267, 89)
-        Year_ReleasedLabel.Name = "Year_ReleasedLabel"
-        Year_ReleasedLabel.Size = New System.Drawing.Size(175, 25)
-        Year_ReleasedLabel.TabIndex = 44
-        Year_ReleasedLabel.Text = "Year Released:"
+        Me.TblActorsBindingSource.DataMember = "tblActors"
+        Me.TblActorsBindingSource.DataSource = Me.MorgansMoviesDataSet2
         '
-        'Year_ReleasedTextBox
+        'TblActorsTableAdapter
         '
-        Me.Year_ReleasedTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblMoviesBindingSource, "Year Released", True))
-        Me.Year_ReleasedTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Year_ReleasedTextBox.ForeColor = System.Drawing.Color.White
-        Me.Year_ReleasedTextBox.Location = New System.Drawing.Point(477, 89)
-        Me.Year_ReleasedTextBox.Name = "Year_ReleasedTextBox"
-        Me.Year_ReleasedTextBox.Size = New System.Drawing.Size(220, 31)
-        Me.Year_ReleasedTextBox.TabIndex = 45
+        Me.TblActorsTableAdapter.ClearBeforeFill = True
         '
         'Form_Add
         '
@@ -379,22 +413,21 @@ Partial Class Form_Add
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.Magenta
-        Me.ClientSize = New System.Drawing.Size(742, 470)
+        Me.ClientSize = New System.Drawing.Size(751, 470)
+        Me.Controls.Add(Me.TblMoviesBindingNavigator)
+        Me.Controls.Add(Me.SummaryRichTextBox)
+        Me.Controls.Add(Me.Actor2TextBox)
+        Me.Controls.Add(Me.Actor3TextBox)
+        Me.Controls.Add(Field1Label)
+        Me.Controls.Add(Me.Actor1TextBox)
+        Me.Controls.Add(GenreLabel)
+        Me.Controls.Add(Me.GenreTextBox)
+        Me.Controls.Add(DirectorsLabel)
+        Me.Controls.Add(Me.DirectorsTextBox)
         Me.Controls.Add(Year_ReleasedLabel)
         Me.Controls.Add(Me.Year_ReleasedTextBox)
         Me.Controls.Add(TitleLabel)
         Me.Controls.Add(Me.TitleTextBox)
-        Me.Controls.Add(Me.TblMoviesBindingNavigator)
-        Me.Controls.Add(Me.TxtBox_Genre)
-        Me.Controls.Add(Me.TxtBox_Director)
-        Me.Controls.Add(Me.TxtBox_Actor1)
-        Me.Controls.Add(Me.TxtBox_Actor2)
-        Me.Controls.Add(Me.TxtBox_Actor3)
-        Me.Controls.Add(Me.Lbl_Year)
-        Me.Controls.Add(Me.Lbl_Genre)
-        Me.Controls.Add(Me.Lbl_Director)
-        Me.Controls.Add(Me.Lbl_LeadingRoles)
-        Me.Controls.Add(Me.RichTxt_Summary)
         Me.Controls.Add(Me.Pic_MoviePoster)
         Me.Controls.Add(Me.Btn_Finish)
         Me.Controls.Add(Me.Btn_Cancel)
@@ -404,32 +437,40 @@ Partial Class Form_Add
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Morgan's Movies"
         CType(Me.Pic_MoviePoster, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.MorgansMoviesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.MorgansMoviesDataSet2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblMoviesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblMoviesBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TblMoviesBindingNavigator.ResumeLayout(False)
         Me.TblMoviesBindingNavigator.PerformLayout()
+        CType(Me.TblGenresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TblActorsBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TxtBox_Genre As System.Windows.Forms.TextBox
-    Friend WithEvents TxtBox_Director As System.Windows.Forms.TextBox
-    Friend WithEvents TxtBox_Actor1 As System.Windows.Forms.TextBox
-    Friend WithEvents TxtBox_Actor2 As System.Windows.Forms.TextBox
-    Friend WithEvents TxtBox_Actor3 As System.Windows.Forms.TextBox
-    Friend WithEvents Lbl_Year As System.Windows.Forms.Label
-    Friend WithEvents Lbl_Genre As System.Windows.Forms.Label
-    Friend WithEvents Lbl_Director As System.Windows.Forms.Label
-    Friend WithEvents Lbl_LeadingRoles As System.Windows.Forms.Label
-    Friend WithEvents RichTxt_Summary As System.Windows.Forms.RichTextBox
     Friend WithEvents Pic_MoviePoster As System.Windows.Forms.PictureBox
     Friend WithEvents Btn_Finish As System.Windows.Forms.Button
     Friend WithEvents Btn_Cancel As System.Windows.Forms.Button
-    Friend WithEvents MorgansMoviesDataSet As Morgans_Movies.MorgansMoviesDataSet
+    Friend WithEvents TitleTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Year_ReleasedTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents DirectorsTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents GenreTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Actor1TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Actor3TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents Actor2TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents SummaryRichTextBox As System.Windows.Forms.RichTextBox
+    Friend WithEvents TblGenresTableAdapter As Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblGenresTableAdapter
+    Friend WithEvents TableAdapterManager1 As MorgansMoviesDataSet2TableAdapters.TableAdapterManager
+    Friend WithEvents MorgansMoviesDataSet As Morgans_Movies.MorgansMoviesDataSet2
+    Friend WithEvents TableAdapterManager As Morgans_Movies.MorgansMoviesDataSet2TableAdapters.TableAdapterManager
+    Friend WithEvents TblMoviesTableAdapter As Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblMoviesTableAdapter
+    Friend WithEvents Field1TextBox As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents MorgansMoviesDataSet2 As Morgans_Movies.MorgansMoviesDataSet2
     Friend WithEvents TblMoviesBindingSource As System.Windows.Forms.BindingSource
-    Friend WithEvents TblMoviesTableAdapter As Morgans_Movies.MorgansMoviesDataSetTableAdapters.tblMoviesTableAdapter
-    Friend WithEvents TableAdapterManager As Morgans_Movies.MorgansMoviesDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents TblMoviesTableAdapter1 As Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblMoviesTableAdapter
+    Friend WithEvents TableAdapterManager2 As Morgans_Movies.MorgansMoviesDataSet2TableAdapters.TableAdapterManager
     Friend WithEvents TblMoviesBindingNavigator As System.Windows.Forms.BindingNavigator
     Friend WithEvents BindingNavigatorAddNewItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorCountItem As System.Windows.Forms.ToolStripLabel
@@ -443,6 +484,8 @@ Partial Class Form_Add
     Friend WithEvents BindingNavigatorMoveLastItem As System.Windows.Forms.ToolStripButton
     Friend WithEvents BindingNavigatorSeparator2 As System.Windows.Forms.ToolStripSeparator
     Friend WithEvents TblMoviesBindingNavigatorSaveItem As System.Windows.Forms.ToolStripButton
-    Friend WithEvents TitleTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Year_ReleasedTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents TblGenresTableAdapter1 As Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblGenresTableAdapter
+    Friend WithEvents TblGenresBindingSource As System.Windows.Forms.BindingSource
+    Friend WithEvents TblActorsTableAdapter As Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblActorsTableAdapter
+    Friend WithEvents TblActorsBindingSource As System.Windows.Forms.BindingSource
 End Class
