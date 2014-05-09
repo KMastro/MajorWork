@@ -1,58 +1,39 @@
 ﻿Public Class Form1
 
+    Dim AllInfo(5) As Object
 
 
-    Private Sub AddNewColumn(ByRef table As DataTable, _
-   ByVal columnType As String, ByVal columnName As String)
-        Dim column As DataColumn = _
-         table.Columns.Add(columnName, Type.GetType(columnType))
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+
+        'Gets input from user
+        AllInfo(0) = Txt_Title.Text
+        AllInfo(1) = Txt_Year.Text
+        AllInfo(2) = Txt_Genre.Text
+        AllInfo(3) = Txt_Director.Text
+        AllInfo(4) = Txt_Actors.Text
+        AllInfo(5) = Txt_Summary.Text
+
+        Dim DR As DataRow
+
+        'Loads the names of the columns
+        Dim DT As DataTable = New DataTable
+        DT.Columns.Add("Title", GetType(String))
+        DT.Columns.Add("Year Realeased", GetType(Integer))
+        DT.Columns.Add("Genre", GetType(String))
+        DT.Columns.Add("Director", GetType(String))
+        DT.Columns.Add("Actors", GetType(String))
+        DT.Columns.Add("Summary", GetType(String))
+
+        'Enters users input into a row
+        DR = DT.NewRow()
+        DR.Table.Rows.Add(AllInfo(0).ToString, AllInfo(1).ToString, AllInfo(2).ToString, AllInfo(3).ToString, AllInfo(4).ToString, AllInfo(5).ToString)
+
+        DataGridView1.DataSource = DT
     End Sub
-
-
-
-    Private Sub AddNewRow(ByRef table As DataTable, ByRef id As Integer, ByRef title As String, ByRef year As Integer, ByRef director As String, ByRef genre As String, ByRef actors As String, ByRef summary As String)
-        Dim newrow As DataRow = table.NewRow()
-        newrow("Movie Num") = id
-        newrow("Title") = title
-        newrow("Year Released") = year
-        newrow("Genre") = genre
-        newrow("Director") = director
-        newrow("Actors") = actors
-        newrow("Summary") = summary
-        table.Rows.Add(newrow)
-    End Sub
-    Private Sub Button1_Click(ByVal sender As Object, ByVal e As EventArgs) Handles Button1.Click
-        Dim ds As New DataSet
-        ds = CreateDataSet()
-        DataGridView1.DataSource = ds.Tables("Movies")
-    End Sub
-
-    Private Function CreateDataSet() As DataSet
-        'creating a DataSet object for tables
-        Dim dataset As DataSet = New DataSet()
-        ' creating the student table
-        Dim Movies As DataTable = AddMovie()
-        dataset.Tables.Add(Movies)
-        Return dataset
-    End Function
-    Private Function AddMovie() As DataTable
-        Dim Movies As DataTable
-        Movies = New DataTable("Movies")
-        ' adding columns
-        AddNewColumn(Movies, "System.Int32", "Movie Num")
-        AddNewColumn(Movies, "System.String", "Title")
-        AddNewColumn(Movies, "System.String", "Year Released")
-        AddNewColumn(Movies, "System.String", "Genre")
-        AddNewColumn(Movies, "System.Int32", "Director")
-        AddNewColumn(Movies, "System.String", "Actors")
-        AddNewColumn(Movies, "System.String", "Summary")
-        ' adding rows
-        AddNewRow(Movies, 1, TextBox1.Text, TextBox2.Text, TextBox3.Text, TextBox4.Text, TextBox7.Text, TextBox8.Text)
-
-        Return Movies
-    End Function
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+        DataGridView1.DataSource = 0
     End Sub
 End Class
+
+

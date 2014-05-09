@@ -33,12 +33,12 @@ Partial Class Form1
         Me.TblMoviesTableAdapter1 = New WindowsApplication1.MorgansMoviesDataSet1TableAdapters.tblMoviesTableAdapter()
         Me.TableAdapterManager1 = New WindowsApplication1.MorgansMoviesDataSet1TableAdapters.TableAdapterManager()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.Txt_Title = New System.Windows.Forms.TextBox()
+        Me.Txt_Year = New System.Windows.Forms.TextBox()
+        Me.Txt_Genre = New System.Windows.Forms.TextBox()
+        Me.Txt_Director = New System.Windows.Forms.TextBox()
+        Me.Txt_Summary = New System.Windows.Forms.TextBox()
+        Me.Txt_Actors = New System.Windows.Forms.TextBox()
         CType(Me.TblMoviesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MorgansMoviesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MorgansMoviesDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -58,7 +58,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(531, 152)
+        Me.Button1.Location = New System.Drawing.Point(467, 320)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(190, 51)
         Me.Button1.TabIndex = 2
@@ -99,64 +99,64 @@ Partial Class Form1
         'DataGridView1
         '
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(28, 29)
+        Me.DataGridView1.Location = New System.Drawing.Point(12, 29)
         Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(472, 199)
+        Me.DataGridView1.Size = New System.Drawing.Size(819, 231)
         Me.DataGridView1.TabIndex = 9
         '
-        'TextBox1
+        'Txt_Title
         '
-        Me.TextBox1.Location = New System.Drawing.Point(354, 251)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(169, 20)
-        Me.TextBox1.TabIndex = 10
+        Me.Txt_Title.Location = New System.Drawing.Point(77, 284)
+        Me.Txt_Title.Name = "Txt_Title"
+        Me.Txt_Title.Size = New System.Drawing.Size(169, 20)
+        Me.Txt_Title.TabIndex = 10
         '
-        'TextBox2
+        'Txt_Year
         '
-        Me.TextBox2.Location = New System.Drawing.Point(354, 294)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(169, 20)
-        Me.TextBox2.TabIndex = 11
+        Me.Txt_Year.Location = New System.Drawing.Point(77, 310)
+        Me.Txt_Year.Name = "Txt_Year"
+        Me.Txt_Year.Size = New System.Drawing.Size(169, 20)
+        Me.Txt_Year.TabIndex = 11
         '
-        'TextBox3
+        'Txt_Genre
         '
-        Me.TextBox3.Location = New System.Drawing.Point(354, 336)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(169, 20)
-        Me.TextBox3.TabIndex = 12
+        Me.Txt_Genre.Location = New System.Drawing.Point(77, 336)
+        Me.Txt_Genre.Name = "Txt_Genre"
+        Me.Txt_Genre.Size = New System.Drawing.Size(169, 20)
+        Me.Txt_Genre.TabIndex = 12
         '
-        'TextBox4
+        'Txt_Director
         '
-        Me.TextBox4.Location = New System.Drawing.Point(354, 378)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(169, 20)
-        Me.TextBox4.TabIndex = 13
+        Me.Txt_Director.Location = New System.Drawing.Point(77, 362)
+        Me.Txt_Director.Name = "Txt_Director"
+        Me.Txt_Director.Size = New System.Drawing.Size(169, 20)
+        Me.Txt_Director.TabIndex = 13
         '
-        'TextBox7
+        'Txt_Summary
         '
-        Me.TextBox7.Location = New System.Drawing.Point(354, 476)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(169, 20)
-        Me.TextBox7.TabIndex = 15
+        Me.Txt_Summary.Location = New System.Drawing.Point(77, 414)
+        Me.Txt_Summary.Name = "Txt_Summary"
+        Me.Txt_Summary.Size = New System.Drawing.Size(169, 20)
+        Me.Txt_Summary.TabIndex = 15
         '
-        'TextBox8
+        'Txt_Actors
         '
-        Me.TextBox8.Location = New System.Drawing.Point(354, 432)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(169, 20)
-        Me.TextBox8.TabIndex = 14
+        Me.Txt_Actors.Location = New System.Drawing.Point(77, 388)
+        Me.Txt_Actors.Name = "Txt_Actors"
+        Me.Txt_Actors.Size = New System.Drawing.Size(169, 20)
+        Me.Txt_Actors.TabIndex = 14
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(843, 578)
-        Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox4)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.Txt_Summary)
+        Me.Controls.Add(Me.Txt_Actors)
+        Me.Controls.Add(Me.Txt_Director)
+        Me.Controls.Add(Me.Txt_Genre)
+        Me.Controls.Add(Me.Txt_Year)
+        Me.Controls.Add(Me.Txt_Title)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
@@ -180,11 +180,11 @@ Partial Class Form1
     Friend WithEvents TblMoviesTableAdapter1 As WindowsApplication1.MorgansMoviesDataSet1TableAdapters.tblMoviesTableAdapter
     Friend WithEvents TableAdapterManager1 As WindowsApplication1.MorgansMoviesDataSet1TableAdapters.TableAdapterManager
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Title As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Year As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Genre As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Director As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Summary As System.Windows.Forms.TextBox
+    Friend WithEvents Txt_Actors As System.Windows.Forms.TextBox
 
 End Class
