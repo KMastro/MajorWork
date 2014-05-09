@@ -18,7 +18,9 @@
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Btn_Finish.Click
 
         'Trying to save
-        BindingNavigatorAddNewItem
+        Me.Validate()
+        Me.TblMoviesBindingSource.EndEdit()
+        Me.TableAdapterManager2.UpdateAll(Me.MorgansMoviesDataSet2)
        
 
 
@@ -100,6 +102,10 @@
     End Sub
 
     Private Sub BindingNavigatorAddNewItem_Click_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BindingNavigatorAddNewItem.Click
+
+    End Sub
+
+    Private Sub BindingNavigatorDeleteItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BindingNavigatorDeleteItem.Click
 
     End Sub
 End Class

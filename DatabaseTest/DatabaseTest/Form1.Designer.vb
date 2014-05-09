@@ -23,56 +23,28 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim TitleLabel As System.Windows.Forms.Label
-        Dim Year_ReleasedLabel As System.Windows.Forms.Label
-        Dim DirectorsLabel As System.Windows.Forms.Label
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.TblMoviesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.MorgansMoviesDataSet = New WindowsApplication1.MorgansMoviesDataSet()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.TblMoviesTableAdapter = New WindowsApplication1.MorgansMoviesDataSetTableAdapters.tblMoviesTableAdapter()
         Me.TableAdapterManager = New WindowsApplication1.MorgansMoviesDataSetTableAdapters.TableAdapterManager()
         Me.MorgansMoviesDataSet1 = New WindowsApplication1.MorgansMoviesDataSet1()
         Me.TblMoviesBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.TblMoviesTableAdapter1 = New WindowsApplication1.MorgansMoviesDataSet1TableAdapters.tblMoviesTableAdapter()
         Me.TableAdapterManager1 = New WindowsApplication1.MorgansMoviesDataSet1TableAdapters.TableAdapterManager()
-        Me.TitleTextBox = New System.Windows.Forms.TextBox()
-        Me.Year_ReleasedTextBox = New System.Windows.Forms.TextBox()
-        Me.DirectorsTextBox = New System.Windows.Forms.TextBox()
-        TitleLabel = New System.Windows.Forms.Label()
-        Year_ReleasedLabel = New System.Windows.Forms.Label()
-        DirectorsLabel = New System.Windows.Forms.Label()
+        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
         CType(Me.TblMoviesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MorgansMoviesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MorgansMoviesDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TblMoviesBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'ListBox1
-        '
-        Me.ListBox1.DataBindings.Add(New System.Windows.Forms.Binding("SelectedValue", Me.TblMoviesBindingSource, "Year Released", True))
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(12, 21)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(367, 238)
-        Me.ListBox1.TabIndex = 0
-        '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(485, 67)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(237, 20)
-        Me.TextBox1.TabIndex = 1
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(531, 152)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(190, 51)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'TblMoviesBindingSource
         '
@@ -83,6 +55,15 @@ Partial Class Form1
         '
         Me.MorgansMoviesDataSet.DataSetName = "MorgansMoviesDataSet"
         Me.MorgansMoviesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(531, 152)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(190, 51)
+        Me.Button1.TabIndex = 2
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'TblMoviesTableAdapter
         '
@@ -115,83 +96,80 @@ Partial Class Form1
         Me.TableAdapterManager1.tblMoviesTableAdapter = Me.TblMoviesTableAdapter1
         Me.TableAdapterManager1.UpdateOrder = WindowsApplication1.MorgansMoviesDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
-        'TitleLabel
+        'DataGridView1
         '
-        TitleLabel.AutoSize = True
-        TitleLabel.Location = New System.Drawing.Point(349, 421)
-        TitleLabel.Name = "TitleLabel"
-        TitleLabel.Size = New System.Drawing.Size(30, 13)
-        TitleLabel.TabIndex = 3
-        TitleLabel.Text = "Title:"
+        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.Location = New System.Drawing.Point(28, 29)
+        Me.DataGridView1.Name = "DataGridView1"
+        Me.DataGridView1.Size = New System.Drawing.Size(472, 199)
+        Me.DataGridView1.TabIndex = 9
         '
-        'TitleTextBox
+        'TextBox1
         '
-        Me.TitleTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblMoviesBindingSource1, "Title", True))
-        Me.TitleTextBox.Location = New System.Drawing.Point(385, 418)
-        Me.TitleTextBox.Name = "TitleTextBox"
-        Me.TitleTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.TitleTextBox.TabIndex = 4
+        Me.TextBox1.Location = New System.Drawing.Point(354, 251)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox1.TabIndex = 10
         '
-        'Year_ReleasedLabel
+        'TextBox2
         '
-        Year_ReleasedLabel.AutoSize = True
-        Year_ReleasedLabel.Location = New System.Drawing.Point(299, 455)
-        Year_ReleasedLabel.Name = "Year_ReleasedLabel"
-        Year_ReleasedLabel.Size = New System.Drawing.Size(80, 13)
-        Year_ReleasedLabel.TabIndex = 5
-        Year_ReleasedLabel.Text = "Year Released:"
+        Me.TextBox2.Location = New System.Drawing.Point(354, 294)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox2.TabIndex = 11
         '
-        'Year_ReleasedTextBox
+        'TextBox3
         '
-        Me.Year_ReleasedTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblMoviesBindingSource1, "Year Released", True))
-        Me.Year_ReleasedTextBox.Location = New System.Drawing.Point(385, 452)
-        Me.Year_ReleasedTextBox.Name = "Year_ReleasedTextBox"
-        Me.Year_ReleasedTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.Year_ReleasedTextBox.TabIndex = 6
+        Me.TextBox3.Location = New System.Drawing.Point(354, 336)
+        Me.TextBox3.Name = "TextBox3"
+        Me.TextBox3.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox3.TabIndex = 12
         '
-        'DirectorsLabel
+        'TextBox4
         '
-        DirectorsLabel.AutoSize = True
-        DirectorsLabel.Location = New System.Drawing.Point(327, 489)
-        DirectorsLabel.Name = "DirectorsLabel"
-        DirectorsLabel.Size = New System.Drawing.Size(52, 13)
-        DirectorsLabel.TabIndex = 7
-        DirectorsLabel.Text = "Directors:"
+        Me.TextBox4.Location = New System.Drawing.Point(354, 378)
+        Me.TextBox4.Name = "TextBox4"
+        Me.TextBox4.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox4.TabIndex = 13
         '
-        'DirectorsTextBox
+        'TextBox7
         '
-        Me.DirectorsTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.TblMoviesBindingSource1, "Directors", True))
-        Me.DirectorsTextBox.Location = New System.Drawing.Point(385, 486)
-        Me.DirectorsTextBox.Name = "DirectorsTextBox"
-        Me.DirectorsTextBox.Size = New System.Drawing.Size(100, 20)
-        Me.DirectorsTextBox.TabIndex = 8
+        Me.TextBox7.Location = New System.Drawing.Point(354, 476)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox7.TabIndex = 15
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(354, 432)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(169, 20)
+        Me.TextBox8.TabIndex = 14
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(843, 578)
-        Me.Controls.Add(DirectorsLabel)
-        Me.Controls.Add(Me.DirectorsTextBox)
-        Me.Controls.Add(Year_ReleasedLabel)
-        Me.Controls.Add(Me.Year_ReleasedTextBox)
-        Me.Controls.Add(TitleLabel)
-        Me.Controls.Add(Me.TitleTextBox)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.TextBox8)
+        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.DataGridView1)
+        Me.Controls.Add(Me.Button1)
         Me.Name = "Form1"
         Me.Text = "Form1"
         CType(Me.TblMoviesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MorgansMoviesDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.MorgansMoviesDataSet1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TblMoviesBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents MorgansMoviesDataSet As WindowsApplication1.MorgansMoviesDataSet
     Friend WithEvents TblMoviesBindingSource As System.Windows.Forms.BindingSource
@@ -201,8 +179,12 @@ Partial Class Form1
     Friend WithEvents TblMoviesBindingSource1 As System.Windows.Forms.BindingSource
     Friend WithEvents TblMoviesTableAdapter1 As WindowsApplication1.MorgansMoviesDataSet1TableAdapters.tblMoviesTableAdapter
     Friend WithEvents TableAdapterManager1 As WindowsApplication1.MorgansMoviesDataSet1TableAdapters.TableAdapterManager
-    Friend WithEvents TitleTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents Year_ReleasedTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents DirectorsTextBox As System.Windows.Forms.TextBox
+    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
 
 End Class

@@ -47,23 +47,23 @@ Partial Class Form_Add
         Me.TblMoviesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TblMoviesTableAdapter1 = New Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblMoviesTableAdapter()
         Me.TableAdapterManager2 = New Morgans_Movies.MorgansMoviesDataSet2TableAdapters.TableAdapterManager()
+        Me.TblActorsTableAdapter = New Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblActorsTableAdapter()
+        Me.TblGenresTableAdapter1 = New Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblGenresTableAdapter()
         Me.TblMoviesBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
-        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
         Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
-        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
-        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
         Me.TblMoviesBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.TblGenresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TblGenresTableAdapter1 = New Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblGenresTableAdapter()
         Me.TblActorsBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.TblActorsTableAdapter = New Morgans_Movies.MorgansMoviesDataSet2TableAdapters.tblActorsTableAdapter()
         TitleLabel = New System.Windows.Forms.Label()
         Year_ReleasedLabel = New System.Windows.Forms.Label()
         DirectorsLabel = New System.Windows.Forms.Label()
@@ -177,7 +177,7 @@ Partial Class Form_Add
         '
         'Year_ReleasedTextBox
         '
-        Me.Year_ReleasedTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Year_ReleasedTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Year_ReleasedTextBox.ForeColor = System.Drawing.Color.Black
         Me.Year_ReleasedTextBox.Location = New System.Drawing.Point(477, 85)
         Me.Year_ReleasedTextBox.Name = "Year_ReleasedTextBox"
@@ -278,6 +278,14 @@ Partial Class Form_Add
         Me.TableAdapterManager2.tblMoviesTableAdapter = Me.TblMoviesTableAdapter1
         Me.TableAdapterManager2.UpdateOrder = Morgans_Movies.MorgansMoviesDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
         '
+        'TblActorsTableAdapter
+        '
+        Me.TblActorsTableAdapter.ClearBeforeFill = True
+        '
+        'TblGenresTableAdapter1
+        '
+        Me.TblGenresTableAdapter1.ClearBeforeFill = True
+        '
         'TblMoviesBindingNavigator
         '
         Me.TblMoviesBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
@@ -295,6 +303,31 @@ Partial Class Form_Add
         Me.TblMoviesBindingNavigator.Size = New System.Drawing.Size(751, 25)
         Me.TblMoviesBindingNavigator.TabIndex = 52
         Me.TblMoviesBindingNavigator.Text = "BindingNavigator1"
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Add new"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'BindingNavigatorMoveFirstItem
         '
@@ -328,17 +361,10 @@ Partial Class Form_Add
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
-        'BindingNavigatorCountItem
-        '
-        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 15)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
-        Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
-        '
         'BindingNavigatorSeparator1
         '
-        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -346,7 +372,7 @@ Partial Class Form_Add
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
         'BindingNavigatorMoveLastItem
@@ -355,38 +381,20 @@ Partial Class Form_Add
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
         Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
         'BindingNavigatorSeparator2
         '
-        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
-        '
-        'BindingNavigatorAddNewItem
-        '
-        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
-        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
-        Me.BindingNavigatorAddNewItem.Text = "Add new"
-        '
-        'BindingNavigatorDeleteItem
-        '
-        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
-        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
-        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
-        Me.BindingNavigatorDeleteItem.Text = "Delete"
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
         '
         'TblMoviesBindingNavigatorSaveItem
         '
         Me.TblMoviesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.TblMoviesBindingNavigatorSaveItem.Image = CType(resources.GetObject("TblMoviesBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.TblMoviesBindingNavigatorSaveItem.Name = "TblMoviesBindingNavigatorSaveItem"
-        Me.TblMoviesBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.TblMoviesBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
         Me.TblMoviesBindingNavigatorSaveItem.Text = "Save Data"
         '
         'TblGenresBindingSource
@@ -394,18 +402,10 @@ Partial Class Form_Add
         Me.TblGenresBindingSource.DataMember = "tblGenres"
         Me.TblGenresBindingSource.DataSource = Me.MorgansMoviesDataSet2
         '
-        'TblGenresTableAdapter1
-        '
-        Me.TblGenresTableAdapter1.ClearBeforeFill = True
-        '
         'TblActorsBindingSource
         '
         Me.TblActorsBindingSource.DataMember = "tblActors"
         Me.TblActorsBindingSource.DataSource = Me.MorgansMoviesDataSet2
-        '
-        'TblActorsTableAdapter
-        '
-        Me.TblActorsTableAdapter.ClearBeforeFill = True
         '
         'Form_Add
         '
