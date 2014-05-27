@@ -29,6 +29,8 @@
         DR.Table.Rows.Add(AllInfo(0).ToString, AllInfo(1).ToString, AllInfo(2).ToString, AllInfo(3).ToString, AllInfo(4).ToString, AllInfo(5).ToString)
 
         DataGridView1.DataSource = DT
+
+
     End Sub
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load

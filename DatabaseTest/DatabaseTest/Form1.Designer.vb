@@ -39,6 +39,12 @@ Partial Class Form1
         Me.Txt_Director = New System.Windows.Forms.TextBox()
         Me.Txt_Summary = New System.Windows.Forms.TextBox()
         Me.Txt_Actors = New System.Windows.Forms.TextBox()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
         CType(Me.TblMoviesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MorgansMoviesDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.MorgansMoviesDataSet1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -106,51 +112,111 @@ Partial Class Form1
         '
         'Txt_Title
         '
-        Me.Txt_Title.Location = New System.Drawing.Point(77, 284)
+        Me.Txt_Title.Location = New System.Drawing.Point(177, 284)
         Me.Txt_Title.Name = "Txt_Title"
         Me.Txt_Title.Size = New System.Drawing.Size(169, 20)
         Me.Txt_Title.TabIndex = 10
         '
         'Txt_Year
         '
-        Me.Txt_Year.Location = New System.Drawing.Point(77, 310)
+        Me.Txt_Year.Location = New System.Drawing.Point(177, 332)
         Me.Txt_Year.Name = "Txt_Year"
         Me.Txt_Year.Size = New System.Drawing.Size(169, 20)
         Me.Txt_Year.TabIndex = 11
         '
         'Txt_Genre
         '
-        Me.Txt_Genre.Location = New System.Drawing.Point(77, 336)
+        Me.Txt_Genre.Location = New System.Drawing.Point(177, 369)
         Me.Txt_Genre.Name = "Txt_Genre"
         Me.Txt_Genre.Size = New System.Drawing.Size(169, 20)
         Me.Txt_Genre.TabIndex = 12
         '
         'Txt_Director
         '
-        Me.Txt_Director.Location = New System.Drawing.Point(77, 362)
+        Me.Txt_Director.Location = New System.Drawing.Point(177, 414)
         Me.Txt_Director.Name = "Txt_Director"
         Me.Txt_Director.Size = New System.Drawing.Size(169, 20)
         Me.Txt_Director.TabIndex = 13
         '
         'Txt_Summary
         '
-        Me.Txt_Summary.Location = New System.Drawing.Point(77, 414)
+        Me.Txt_Summary.Location = New System.Drawing.Point(177, 516)
         Me.Txt_Summary.Name = "Txt_Summary"
         Me.Txt_Summary.Size = New System.Drawing.Size(169, 20)
         Me.Txt_Summary.TabIndex = 15
         '
         'Txt_Actors
         '
-        Me.Txt_Actors.Location = New System.Drawing.Point(77, 388)
+        Me.Txt_Actors.Location = New System.Drawing.Point(177, 463)
         Me.Txt_Actors.Name = "Txt_Actors"
         Me.Txt_Actors.Size = New System.Drawing.Size(169, 20)
         Me.Txt_Actors.TabIndex = 14
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(86, 287)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(27, 13)
+        Me.Label1.TabIndex = 16
+        Me.Label1.Text = "Title"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(86, 523)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(50, 13)
+        Me.Label2.TabIndex = 17
+        Me.Label2.Text = "Summary"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(86, 339)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(29, 13)
+        Me.Label3.TabIndex = 17
+        Me.Label3.Text = "Year"
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(86, 376)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(36, 13)
+        Me.Label4.TabIndex = 17
+        Me.Label4.Text = "Genre"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(86, 421)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(44, 13)
+        Me.Label5.TabIndex = 17
+        Me.Label5.Text = "Director"
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.Location = New System.Drawing.Point(86, 470)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(41, 13)
+        Me.Label6.TabIndex = 17
+        Me.Label6.Text = "1 Actor"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(843, 578)
+        Me.Controls.Add(Me.Label6)
+        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Txt_Summary)
         Me.Controls.Add(Me.Txt_Actors)
         Me.Controls.Add(Me.Txt_Director)
@@ -186,5 +252,11 @@ Partial Class Form1
     Friend WithEvents Txt_Director As System.Windows.Forms.TextBox
     Friend WithEvents Txt_Summary As System.Windows.Forms.TextBox
     Friend WithEvents Txt_Actors As System.Windows.Forms.TextBox
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents Label5 As System.Windows.Forms.Label
+    Friend WithEvents Label6 As System.Windows.Forms.Label
 
 End Class
